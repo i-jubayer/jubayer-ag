@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-section {
+    height: 250px;
+    width: 250px;
+    background-image: url(alone-boy-6129399_1280.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid orange;
+    box-shadow:  0 0 30px 10px rgba(255, 166, 0, 0.453);
+    position: relative;
+}
+
+.first-circle {
+    height: 320px;
+    width: 320px;
+    border: 2px dotted #dddddd87;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.first-circle::before {
+    content: "";
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: greenyellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(172, 255, 47, 0.5);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    animation: animate 25s linear infinite;
+    -webkit-animation: animate 25s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg) translate(161px)rotate(0deg);
+        -webkit-transform: rotate(0deg) translate(161px)rotate(0deg);
+        -moz-transform: rotate(0deg) translate(161px)rotate(0deg);
+        -ms-transform: rotate(0deg) translate(161px)rotate(0deg);
+        -o-transform: rotate(0deg) translate(161px)rotate(0deg);
+}
+    100% {
+            transform: rotate(360deg) translate(161px)rotate(360deg);
+            -webkit-transform: rotate(360deg) translate(161px)rotate(360deg);
+            -moz-transform: rotate(360deg) translate(161px)rotate(360deg);
+            -ms-transform: rotate(360deg) translate(161px)rotate(360deg);
+            -o-transform: rotate(360deg) translate(161px)rotate(360deg);
+}
+}
+
+.second-circle {
+    height: 430px;
+    aspect-ratio: 1;
+    border: 2px dotted #dddddda4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.earth-img {
+    content: "";
+    height: 40px;
+    aspect-ratio: 1;
+    background-image: url(earth-11015_640.jpg);
+    background-size: cover;
+    background-clip: content-box;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    animation: earth 30s linear infinite;
+    -webkit-animation: earth 30s linear infinite;
+}
+
+@keyframes earth {
+    0%{
+        transform: rotate(0deg)translate(214px)rotate(0deg);
+        -webkit-transform: rotate(0deg)translate(214px)rotate(0deg);
+        -moz-transform: rotate(0deg)translate(214px)rotate(0deg);
+        -ms-transform: rotate(0deg)translate(214px)rotate(0deg);
+        -o-transform: rotate(0deg)translate(214px)rotate(0deg);
+}
+         100% {
+             transform: rotate(360deg)translate(214px)rotate(360deg);
+             -webkit-transform: rotate(360deg)translate(214px)rotate(360deg);
+             -moz-transform: rotate(360deg)translate(214px)rotate(360deg);
+             -ms-transform: rotate(360deg)translate(214px)rotate(360deg);
+             -o-transform: rotate(360deg)translate(214px)rotate(360deg);
+}
+}
+
+.earth-img::after{
+    content: "";
+    height: 60px;
+    width: 60px;
+    border: 1.5px dotted #dddddd87;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.earth-img::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.485);
+    position: absolute;
+top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: border-e 5s linear infinite;
+    -webkit-animation: border-e 5s linear infinite;
+}
+
+@keyframes border-e {
+    0%{
+        transform: rotate(0deg)translate(30px)rotate(0deg);
+        -webkit-transform: rotate(0deg)translate(30px)rotate(0deg);
+        -moz-transform: rotate(0deg)translate(30px)rotate(0deg);
+        -ms-transform: rotate(0deg)translate(30px)rotate(0deg);
+        -o-transform: rotate(0deg)translate(30px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(30px)rotate(360deg);
+    -webkit-transform: rotate(360deg)translate(30px)rotate(360deg);
+    -moz-transform: rotate(360deg)translate(30px)rotate(360deg);
+    -ms-transform: rotate(360deg)translate(30px)rotate(360deg);
+    -o-transform: rotate(360deg)translate(30px)rotate(360deg);
+}
+}
+
+.third-circle {
+    height: 550px;
+    width: 550px;
+    border: 2px dotted #dddddd87;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.third-circle::before {
+    content: "";
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgb(255, 231, 47);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(241, 255, 47, 0.5);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: third 50s linear infinite;
+    -webkit-animation: third 50s linear infinite;
+}
+
+@keyframes third {
+    0% {
+        transform: rotate(0deg) translate(275px)rotate(0deg);
+        -webkit-transform: rotate(0deg) translate(275px)rotate(0deg);
+        -moz-transform: rotate(0deg) translate(275px)rotate(0deg);
+        -ms-transform: rotate(0deg) translate(275px)rotate(0deg);
+        -o-transform: rotate(0deg) translate(275px)rotate(0deg);
+}
+
+    100% {
+        transform: rotate(360deg) translate(275px)rotate(360deg);
+        -webkit-transform: rotate(360deg) translate(275px)rotate(360deg);
+        -moz-transform: rotate(360deg) translate(275px)rotate(360deg);
+        -ms-transform: rotate(360deg) translate(275px)rotate(360deg);
+        -o-transform: rotate(360deg) translate(275px)rotate(360deg);
+}
+}

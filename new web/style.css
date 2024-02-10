@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tw Cen MT, 'sans-serif';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --big-font:4rem;
+    --mideum-font: 2rem;
+    --little-font: 1.2rem;
+    --para-font: 1.5rem;
+    --upperfont: uppercase;
+    --primary-color: rgba(225, 170, 179, 0.255);
+    --gray-color: #484747;
+    --secondery-color: #b3d6da2e;
+    --white: #fff;
+    --black: #000;
+    --style-font: Ambient;
+    --btn-color:  #c98c5a;
+    --hover-color: #aea8a8e2;  
+}
+
+::-webkit-scrollbar {
+    background: var(--white);
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(228, 189, 189);
+    border-radius: 50px;
+    height: 10rem;
+}
+
+h1,h2,h3 {
+    letter-spacing: .09rem;
+}
+
+.para {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .05rem;
+}
+
+.icon {
+    height: 1.4rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@media (max-width:600px) {
+    main .hero-iimg{
+        /* height: 30rem; */
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+
+}
+/* ----------------------
+----header style start---
+------------------------ */
+
+header {
+    height: 10vh;
+    width: 100%;
+    padding: 4rem 5.5rem;
+    background: var(--primary-color);
+}
+
+.header-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-menu {
+    text-transform: var(--upperfont);
+    font-size: var(--little-font);
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    cursor: pointer;
+}
+
+.top-menu {
+    opacity: 0;
+}
+
+
+.navbar ul{
+    display: flex;
+    font-size: var(--little-font);
+    text-transform: var(--upperfont);
+    font-weight: 600;
+    gap: 4rem;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    opacity: .5;
+}
+
+.navbar ul a {
+    color: var(--black);
+    letter-spacing: .1rem;
+}
+
+/* ----------------------
+----main style start---
+------------------------ */
+
+main {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 2rem 6rem;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31.5rem, 1fr));
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 3rem 5rem 6rem;
+    gap: .3rem;
+}
+
+.hero-text h3 {
+    font-size: 2.5rem;
+    font-variant: small-caps;
+}
+
+.hero-text h1 {
+    font-size: 6rem;
+    font-family: var(--style-font);
+    text-transform: capitalize;
+    font-variant: small-caps;
+    letter-spacing: .5rem;
+}
+
+.hero-text p:nth-of-type(1) {
+    color: var(--gray-color);
+    margin: 2rem 0;
+}
+
+.btn {
+    align-self: flex-start;
+    font-size: var(--little-font);
+    text-transform: var(--upperfont);
+    padding: 1.4rem 3rem;
+    background: var(--btn-color);
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #bd6014ed;
+}
+
+.hero-btn {
+    padding: 1.8rem 4rem;
+    margin-top: 2rem;
+}
+
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-iimg {
+    height: 50rem;
+}
+
+.hero-icon {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    top: 20rem;
+}
+
+.hleft-icon {
+    height: 2rem;
+}
+
+.hright-icon {
+    box-shadow: 0 0 0 1.5rem var(--white);
+    border-radius: 50%;
+}
+
+
+
+/* ----------------------
+----hero panel style start---
+------------------------ */
+
+.hero-panel-sec {
+    height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    align-content: center;
+    justify-items: center;
+    font-size: var(--little-font);
+    text-transform: var(--upperfont);
+}
+
+.hero-panel-sec .icon {
+    height: .8rem;
+    transform: rotate(90deg);
+}
+
+.hero-panel-sec p {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero-panel-sec p:active img{
+    transform: rotate(270deg);
+}
+
+/* ----------------------
+----news style start----
+------------------------ */
+
+.news {
+    width: 100%;
+    padding: 7rem;
+    background: var(--secondery-color);
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-data {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-cation {
+    font-size: var(--big-font);
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+.news-data {
+    gap: 3rem;
+    margin-top: 7rem;
+
+}
+
+.news-data .box1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--white);
+    width: 30rem;
+}
+
+.news-data .nbox .nbox1-img {
+    height: 18rem;
+    width: 100%;
+    background:
+    url(Ariana-Grande-Sweet-Like-Candy-Eau-de-Parfum-Perfume-for-Women-1-Oz_6e8a4fdb-601f-42e5-86b0-0ed64fb1412a.28b228882edbbd27cf7d851dad8ec0df.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   box-shadow: 0 0 .1rem rgb(13, 157, 73);
+}
+
+.news-data .nbox h2 {
+    font-size: var(--mideum-font);
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.news-data .para {
+    text-align: center;
+}
+
+.news-data .nbox .btn {
+    display: inline;
+    margin: 3.5rem auto;
+}
+
+.nicon {
+    position: relative;
+    top: 20rem;
+    left: 1.5rem;
+}
+
+.nricon {
+    box-shadow:  0 0 0 1.5rem white;
+    border-radius: 50%;
+}
+
+.news-data .box2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--white);
+    width: 30rem;
+}
+
+.news-data .nbox .nbox2-img {
+    height: 18rem;
+    width: 100%;
+    background:
+    url(Beats-Studio3-Wireless-Noise-Cancelling-Headphones-with-Apple-W1-Headphone-Chip-Matte-Black_d0f19be2-e68f-4b82-b95c-c37db53518ba_1.868e67b856407714e2c5405a7e2f094a.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   box-shadow: 0 0 .1rem rgb(13, 157, 73);
+}
+
+.news-data .box3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--white);
+    width: 30rem;
+}
+
+.news-data .nbox .nbox3-img {
+    height: 18rem;
+    width: 100%;
+    background:
+    url(k2-_c76e7139-cecb-4d48-893d-686d9bbbbfbe.v1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   box-shadow: 0 0 .1rem rgb(13, 157, 73);
+}
+
+.nb2 {
+    padding: 1.4rem 3.3rem;
+}
+
+.nb3 {
+    padding: 1.4rem 5rem;
+}
+
+@media (max-width:)

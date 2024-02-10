@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background: #000;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        h1{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: yellow;
+            position: relative;
+        }
+
+         h1::before{
+            content: "creative...";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: rgb(0, 153, 255);
+            border-right: 2px solid rgb(0, 153, 255);
+            height: 100%;
+            width: 0;
+            overflow: hidden;
+            animation: animate 2s linear infinite;
+        }
+
+        @keyframes animate {
+            0%{
+                width: 0%;
+            }
+
+            50%{
+                width: 100%;
+            }
+
+            100%{
+                width: 0%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>creative...</h1>
+</body>
+</html>
